@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: DataTime;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(#0f0c29, #302b63, #24243e);
+}
+.container__time {
+  color: green;
+  height: 400px;
+  width: 400px;
+}
+.pais__elegir {
+  font-size: 1.5rem;
+
+  color: #fff;
+}
+.seleccion__pais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-bottom: 5px solid #fff;
+}
+.pais {
+  height: 30px;
+  font-size: 1.5rem;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+}
+option {
+  color: #fff;
+  background-color: #000;
+}
+.data__time {
+  font-size: 8rem;
+  text-align: center;
+}
