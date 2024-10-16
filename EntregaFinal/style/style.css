@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cartoon;
+}
+/* Estilos de la barra de navegacion */
+.menu {
+  background-color: #1a202c;
+  color: #fff;
+  height: 70px;
+}
+.logo__menu {
+  height: 3.5rem;
+}
+.menu__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.menu__links {
+  height: 100%;
+  transition: transform 0.5s;
+  display: flex;
+}
+
+.menu__item {
+  list-style: none;
+  position: relative;
+  height: 100%;
+  --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+  --transform: rotate(-90deg);
+}
+
+.menu__item:hover {
+  --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  --transform: rotate(0);
+}
+
+.menu__link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 30px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.menu__link:hover {
+  background-color: #5e7094;
+}
+
+.menu__hamburguer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu__img {
+  display: block;
+  width: 36px;
+}
+/* Estilos de main */
+.main__container {
+  height: 100vh;
+  background: url("../icon/fondo.png") no-repeat center center/ cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container__preguntas {
+  height: 300px;
+  width: 400px;
+
+  margin-top: 20px;
+  background-color: #fff;
+  border: 5px solid #000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.preguntas {
+  font-size: 1.5rem;
+}
+.container__respuestas {
+  height: 500px;
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 150px;
+  background-color: #fff;
+  border: 5px solid #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.respuestas {
+  height: 10vh;
+  width: 100%;
+  background: red;
+}
+/* Inicion de media queris */
+@media (max-width: 800px) {
+  .menu__hamburguer {
+    display: flex;
+  }
+
+  .menu__item {
+    --clip: 0;
+    overflow: hidden;
+  }
+
+  .menu__links {
+    position: fixed;
+    max-width: 400px;
+    width: 100%;
+    top: 70px;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    overflow-y: auto;
+    display: grid;
+    grid-auto-rows: max-content;
+    transform: translateX(100%);
+  }
+
+  .menu__links--show {
+    transform: unset;
+    width: 100%;
+  }
+
+  .menu__link {
+    padding: 25px 0;
+    padding-left: 30px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .menu__link:hover {
+    background-color: red;
+  }
+}
