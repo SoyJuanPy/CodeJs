@@ -89,6 +89,9 @@
 .btn:hover {
   background-color: #f0d7a8;
 }
+.btn--off {
+  display: none;
+}
 .container__preguntas--start {
   height: 300px;
   width: 500px;
