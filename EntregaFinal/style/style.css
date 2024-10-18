@@ -71,7 +71,7 @@
 /* Estilos de main */
 .main__container {
   height: 100vh;
-  background: url("../icon/fondo.png") no-repeat center center/ cover;
+  background: url("../icon/fondo.webp") no-repeat center center/ cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,7 +95,6 @@
 .container__preguntas--start {
   height: 300px;
   width: 500px;
-
   margin-top: 20px;
   background-color: #f0cb96;
   border: 5px solid #000;
@@ -107,6 +106,9 @@
 }
 .preguntas--start {
   font-size: 1.5rem;
+  width: 300px;
+  white-space: normal;
+  word-wrap: break-word;
 }
 .container__respuestas--start {
   height: 500px;
