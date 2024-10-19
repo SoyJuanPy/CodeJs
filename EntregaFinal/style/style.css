@@ -85,6 +85,9 @@
   background-color: #f0eac0;
   border: 5px solid #000;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn:hover {
   background-color: #f0d7a8;
@@ -134,6 +137,44 @@
 }
 .respuestas--start:hover {
   background-color: #cfd6f0;
+}
+.reiniciar,
+.puntaje {
+  height: 75px;
+  width: 150px;
+  font-size: 2rem;
+  padding: 0 20px;
+  margin: 20px;
+  border: 6px solid #000;
+  border-radius: 10px;
+  background-color: #f0cb96;
+  text-decoration: none;
+  color: #000;
+}
+.reiniciar:hover,
+.puntaje:hover {
+  background-color: #f0d7a8;
+}
+.reiniciar--ver,
+.puntaje--ver {
+  display: flex;
+}
+.perdedor {
+  font-size: 2rem;
+}
+.perder {
+  height: 300px;
+  width: 500px;
+  background-color: #f0d7a8;
+  border: 10px solid #000;
+  border-radius: 15px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.perder--ver {
+  display: flex;
 }
 /* Inicion de media queris */
 @media (max-width: 800px) {
